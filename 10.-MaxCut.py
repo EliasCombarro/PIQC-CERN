@@ -86,8 +86,6 @@ sampler = EmbeddingComposite(DWaveSampler(solver='Advantage_system1.1'))
 sampler_name = sampler.properties['child_properties']['chip_id]
 response = sampler.sample(model, num_reads=5000)
 print("The solution obtained by D-Wave's quantum annealer",sampler_name," is")
-response = sampler.sample(model, num_reads=5000)
-print("The solution obtained by D-Wave's quantum annealer is")
 print(response)
 print()
 
